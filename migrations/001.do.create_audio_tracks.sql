@@ -7,5 +7,5 @@ CREATE TABLE audio_tracks (
     ogg_url VARCHAR NOT NULL,
     color TEXT NOT NULL,
     category TEXT NOT NULL,
-    author TEXT NOT NULL,
+    author TEXT,
 );
