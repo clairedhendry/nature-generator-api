@@ -3,8 +3,9 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 const helmet = require('helmet');
-const { NODE_ENV } = require('./config');
-const { CLIENT_ORIGIN } = require('./config');
+const { NODE_ENV } = require('../config');
+const { CLIENT_ORIGIN } = require('../config');
+const AudioRouter = require('./audio/audioRouter')
 
 const app = express()
 
@@ -16,7 +17,7 @@ app.use(cors({
   origin: CLIENT_ORIGIN
 }))
 
-app.use('/api/audio', AudioRouter)
+// app.use('/api/audio', AudioRouter)
 
 
 app.use(function errorHandler(error, req, res, next) {
