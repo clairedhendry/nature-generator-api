@@ -16,10 +16,8 @@ app.use(cors({
   origin: CLIENT_ORIGIN
 }))
 
-// app.use('/api/shildeshow', slideshowRouter)
-app.get('/api/*', (req, res) => {
-  res.json({ok: true});
-});
+app.use('/api/audio', AudioRouter)
+
 
 app.use(function errorHandler(error, req, res, next) {
      let response
