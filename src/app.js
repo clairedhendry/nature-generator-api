@@ -17,7 +17,7 @@ app.use(cors({
   origin: CLIENT_ORIGIN
 }))
 
-// app.use('/api/audio', AudioRouter)
+app.use('/api/audio', AudioRouter)
 
 
 app.use(function errorHandler(error, req, res, next) {
