@@ -7,6 +7,7 @@ audio_tracks;
 INSERT INTO audio_tracks (title, mp3_url, ogg_url, color, category, author, attribute) 
 VALUES
 ('wind through trees', 'https://freesound.org/data/previews/244/244942_263745-lq.mp3', 'https://freesound.org/data/previews/244/244942_263745-lq.ogg', 'red', 'trees', 'spoonbender', null),
+('jkl_woods', 'https://freesound.org/data/previews/202/202042_3755670-lq.mp3', 'https://freesound.org/data/previews/202/202042_3755670-lq.ogg', 'red', 'trees', 'leimu', null)
 ('ambient sound during sunset', 'https://freesound.org/data/previews/514/514496_3335721-lq.mp3', 'https://freesound.org/data/previews/514/514496_3335721-lq.ogg', 'red', 'sunset', 'psubhashish', 'true'),
 ('wind through trees', 'https://freesound.org/data/previews/244/244942_263745-lq.mp3', 'https://freesound.org/data/previews/244/244942_263745-lq.ogg', 'red', 'nature', 'spoonbender', null),
 ('wind through trees', 'https://freesound.org/data/previews/244/244942_263745-lq.mp3', 'https://freesound.org/data/previews/244/244942_263745-lq.ogg', 'red', 'animals', 'spoonbender', null),
@@ -19,13 +20,17 @@ VALUES
 
 ('beach waves', 'https://freesound.org/data/previews/463/463250_7482766-lq.mp3', 'https://freesound.org/data/previews/463/463250_7482766-lq.ogg', 'yellow', 'beach', 'suburbanwizard', null),
 ('countryside with bees', 'https://freesound.org/data/previews/242/242151_2019774-lq.mp3', 'https://freesound.org/data/previews/242/242151_2019774-lq.ogg', 'yellow', 'flower', 'bassboybg', null),
-('summer meadow', 'https://freesound.org/data/previews/409/409143_85211-lq.mp3', 'https://freesound.org/data/previews/409/409143_85211-lq.ogg', 'yellow', 'flower', 'baryy', null),
+('summer meadow', 'https://freesound.org/data/previews/409/409143_85211-lq.mp3', 'https://freesound.org/data/previews/409/409143_85211-lq.ogg', 'yellow', 'animals', 'baryy', null),
 ('countryside with bees', 'https://freesound.org/data/previews/242/242151_2019774-lq.mp3', 'https://freesound.org/data/previews/242/242151_2019774-lq.ogg', 'yellow', 'nature', 'bassboybg', null),
 
 ('path of jungle', 'https://freesound.org/data/previews/381/381384_7084234-lq.mp3', 'https://freesound.org/data/previews/381/381384_7084234-lq.ogg', 'green', 'jungle', null, null),
 ('jungle birds', 'https://freesound.org/data/previews/122/122767_1933077-lq.mp3', 'https://freesound.org/data/previews/122/122767_1933077-lq.ogg', 'green', 'jungle', 'folkart films', null),
 ('countryside with bees', 'https://freesound.org/data/previews/242/242151_2019774-lq.mp3', 'https://freesound.org/data/previews/242/242151_2019774-lq.ogg', 'green', 'meadow', 'bassboybg', null),
 ('summer meadow', 'https://freesound.org/data/previews/409/409143_85211-lq.mp3', 'https://freesound.org/data/previews/409/409143_85211-lq.ogg', 'green', 'flower', 'baryy', null),
+('forest', 'https://freesound.org/data/previews/506/506103_5917175-lq.mp3', 'https://freesound.org/data/previews/506/506103_5917175-lq.ogg', 'green', 'forest', 'JayHu', 'true'),
+('ForestDay_BW.66', 'https://freesound.org/data/previews/517/517042_11333374-lq.mp3', 'https://freesound.org/data/previews/517/517042_11333374-lq.ogg', 'green', 'trees', 'sonidosreales245', null),
+('sfx_amb_forest_spring_afternoon-02', 'https://freesound.org/data/previews/385/385279_2341984-lq.mp3', 'https://freesound.org/data/previews/385/385279_2341984-lq.ogg', 'green', 'forest', 'bajko', null),
+('sfx_amb_forest_spring_afternoon-02', 'https://freesound.org/data/previews/385/385279_2341984-lq.mp3', 'https://freesound.org/data/previews/385/385279_2341984-lq.ogg', 'green', 'nature', 'bajko', null),
 
 ('waves of Hawaii', 'https://freesound.org/data/previews/450/450755_6253486-lq.mp3', 'https://freesound.org/data/previews/450/450755_6253486-lq.ogg', 'blue', 'ocean', 'florianreichelt', 'true'),
 ('beach waves', 'https://freesound.org/data/previews/463/463250_7482766-lq.mp3', 'https://freesound.org/data/previews/463/463250_7482766-lq.ogg', 'blue', 'beach', 'suburbanwizard', null),
