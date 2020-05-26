@@ -7,7 +7,7 @@ audio_tracks;
 INSERT INTO audio_tracks (title, mp3_url, ogg_url, color, category, author, attribute) 
 VALUES
 ('wind through trees', 'https://freesound.org/data/previews/244/244942_263745-lq.mp3', 'https://freesound.org/data/previews/244/244942_263745-lq.ogg', 'red', 'trees', 'spoonbender', null),
-('jkl_woods', 'https://freesound.org/data/previews/202/202042_3755670-lq.mp3', 'https://freesound.org/data/previews/202/202042_3755670-lq.ogg', 'red', 'trees', 'leimu', null)
+('jkl_woods', 'https://freesound.org/data/previews/202/202042_3755670-lq.mp3', 'https://freesound.org/data/previews/202/202042_3755670-lq.ogg', 'red', 'trees', 'leimu', null),
 ('ambient sound during sunset', 'https://freesound.org/data/previews/514/514496_3335721-lq.mp3', 'https://freesound.org/data/previews/514/514496_3335721-lq.ogg', 'red', 'sunset', 'psubhashish', 'true'),
 ('wind through trees', 'https://freesound.org/data/previews/244/244942_263745-lq.mp3', 'https://freesound.org/data/previews/244/244942_263745-lq.ogg', 'red', 'nature', 'spoonbender', null),
 ('wind through trees', 'https://freesound.org/data/previews/244/244942_263745-lq.mp3', 'https://freesound.org/data/previews/244/244942_263745-lq.ogg', 'red', 'animals', 'spoonbender', null),
