@@ -1,5 +1,4 @@
 const app = require('../src/app')
-const { expect } = require('chai')
 const knex = require('knex')
 const { tracksData } = require('./test-data.fixtures')
 
@@ -23,14 +22,14 @@ describe(`Nature generator endpoints`, () => {
 
   describe(`/api/audio`, () => {
    
-    describe(`GET /api/audio`, () => {
+    
       context(`Given there are no tracks in the database`, () => {
         it('responds with 200 and empty array', () => {
           return supertest(app)
             .get('/api/audio')
             .expect(200, [])
         })
-      })
+      
       context(`Given there are tracks in the database`, () => {
         const testTracks = tracksData;
         beforeEach('insert tracks', () => {
@@ -50,14 +49,24 @@ describe(`Nature generator endpoints`, () => {
 
     describe(`GET /api/audio/:color/:category`, () => {
       
-      context(`Given there are no tracks in the database`, () => {
-        it('responds with 404 not found', () => {
+      context(`Given there are tracks in the database`, () => {
+        const testTracks = tracksData;
+        const testColor = 'green'
+        const testCategory = 'jungle'
+
+        beforeEach('insert tracks', () => {
+          return db
+            .into('audio_tracks')
+            .insert(testTracks)
+        })
+        it('responds with 200 and a random track', () => {
+
           return supertest(app)
-            .get(`/api/audio/green/jungle`)
-            .expect(404)
+            .get('/api/audio/green/jungle')
+            .expect(200)
+            })
         })
       })
     })
 
   })
-})

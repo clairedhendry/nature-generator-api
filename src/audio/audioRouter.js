@@ -9,20 +9,27 @@ const jsonBodyParser = express.json()
 AudioRouter
 //require auth
     .route('/:color/:category')
-    .get(jsonBodyParser, (req, res, next) => {
-        const { color, category } = req.body
-        AudioService.getAudioMP3(
+    .all((req, res, next) => {
+
+        AudioService.getAudioByColorAndCategory(
             req.app.get('db'), 
-            color,
-            category)
+            req.params.color,
+            req.params.category)
       
-    .then(track => {
-        res
-            .status(200)
-            .json(track)
-    })
+        .then(track => {
+            if(!track) {
+                return res.status(404).json({
+                    error: {message: `Track doesn't exist`}
+                })
+            }
+            res.track = track
+            next()
+        })
     .catch(next)
-})
+    })
+    .get((req, res, next) => {
+        res.json(res.track)
+    })
 
 AudioRouter 
     .route('/')
