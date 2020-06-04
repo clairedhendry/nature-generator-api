@@ -51,8 +51,6 @@ describe(`Nature generator endpoints`, () => {
       
       context(`Given there are tracks in the database`, () => {
         const testTracks = tracksData;
-        const testColor = 'green'
-        const testCategory = 'jungle'
 
         beforeEach('insert tracks', () => {
           return db
