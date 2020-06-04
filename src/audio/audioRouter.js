@@ -1,13 +1,12 @@
 const express = require('express')
-// const path = require('path')
 const AudioService = require('./audio-service')
-// const { requireAuth } = require('../middleware/basic-auth')
+
 
 const AudioRouter = express.Router()
 const jsonBodyParser = express.json()
 
 AudioRouter
-//require auth
+
     .route('/:color/:category')
     .all((req, res, next) => {
 
