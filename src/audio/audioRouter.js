@@ -1,9 +1,8 @@
-const express = require('express')
-const AudioService = require('./audio-service')
+const express = require('express');
+const AudioService = require('./audio-service');
 
+const AudioRouter = express.Router();
 
-const AudioRouter = express.Router()
-const jsonBodyParser = express.json()
 
 AudioRouter
 

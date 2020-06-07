@@ -1,6 +1,6 @@
-const app = require('../src/app')
-const knex = require('knex')
-const { tracksData } = require('./test-data.fixtures')
+const app = require('../src/app');
+const knex = require('knex');
+const { tracksData } = require('./test-data.fixtures');
 
 
 describe(`Nature generator endpoints`, () => {
@@ -67,4 +67,4 @@ describe(`Nature generator endpoints`, () => {
       })
     })
 
-  })
+  });
